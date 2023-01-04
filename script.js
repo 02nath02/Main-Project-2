@@ -20,6 +20,16 @@ const phones=[
     {name:"105", memory:"4", color:["black","blue","pink"], price:25, brand:"Nokia", imgName:'iphone.jpg'},
     
   ];
+  const phonesdiv = document.querySelector("#sec6");
+function all (){
+    phones.forEach(function(phone){
+    const newParagraph = document.createElement("p");
+    newParagraph.textContent = `The matching phones are ${phone.name} with a memory of ${phone.memory} price ${phone.price} and color ${phone.color}.`;    
+    phonesdiv.appendChild(newParagraph);
+
+  })}
+  all();
+
 const selectedcost = document.querySelector("#Cost");
 const maxPrice = document.querySelector('#price');
 selectedcost.addEventListener('input', function(){
@@ -38,7 +48,7 @@ function allphones(){
   brands= [];
  filteredphones = []
 
- const phonesdiv = document.querySelector("#sec6");
+ 
   phonesdiv.innerHTML = '';
 
  const selectedbrands = Array.from(document.querySelectorAll(".brandcheck"))
