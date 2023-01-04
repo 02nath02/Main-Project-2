@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Website</title>
+    <link href="phonedesign.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="Heading">
+        <h1>Phone picker</h1>      
+    </div>
+
+
+    <div class="Holder">
+        <div class="sec1" name="brands" >
+            <fieldset>
+            <legend>What brand do you what?</legend>
+                <label for="apple">Apple</label><input type="checkbox" value="Apple" id="apple" class="brandcheck">
+                <br/>
+                <label for="Samsung">Samsung</label><input type="checkbox" value="Samsung" id="Samsung" class="brandcheck">
+                <br/>
+                <label for="Nokia">Nokia</label><input type="checkbox" value="Nokia" id="Nokia" class="brandcheck">
+                <br/>
+                <label for="Google">Google</label><input type="checkbox" value="Google" id="Google" class="brandcheck">
+                <br/>
+                <label for="Motorola">Motorola</label><input type="checkbox" value="Motorola" id="Motorola" class="brandcheck">
+            </fieldset>
+
+        </div>
+
+        <div class="sec2">
+            <legend><h1>Colour</h1></legend>
+            <label for="Black"> Black</label><input type="radio" name="color" value="black" id="Black" class="colourcheck">
+            <br/>
+            <label for="Silver">Silver</label><input type="radio" name="color" value="silver" id="Silver" class="colourcheck">
+            <br/>
+            <label for="White">White</label><input type="radio" name="color" value="white" id="White" class="colourcheck">
+            <br/>
+            <label for="Green">Green</label><input type="radio" name="color" value="green" id="Green" class="colourcheck">
+            <br/>
+            <label for="Gold">Gold</label><input type="radio" name="color" value="gold" id="Gold" class="colourcheck">
+            <br/>
+            <label for="Grey">Grey</label><input type="radio" name="color" value="grey" id="Grey" class="colourcheck">
+            <br/>
+            <label for="Red">Red</label><input type="radio" name="color" value="red" id="Red" class="colourcheck">
+            <br/>
+            <label for="Blue">Blue</label><input type="radio" name="color" value="blue" id="Blue" class="colourcheck">
+            <br/>
+            <label for="Pink">Pink</label><input type="radio" name="color" value="pink" id="Pink" class="colourcheck">
+            <br/>
+            <label for="Pink">All colours</label><input type="radio" name="color" value="all" id="all" class="colourcheck">
+        </div>
+
+        <div class="sec3">
+            
+                <label for="Storage">Choose a Memory:</label>
+
+                 <select name="Memory" id="Memory">
+                 <option value="4">4MB</option>
+                 <option value="32">32GB</option>
+                 <option value="64">64GB</option>
+                 <option value="128">128GB</option>
+                 <option value="256">256GB</option>
+                 <option value="512">512GB</option>
+
+
+
+                </select>
+            
+                
+                
+        </div>
+        <div class="sec4">
+            <legend><h1>Cost</h1></legend>
+            <label for="maxprice">Price</label><input type="range" min="0" max="1200" value="1200" step="20" id="Cost">
+            <p id="price">£1200 </p>
+        </div>
+    </form>
+        <div class="sec5">
+            <button id="filterAll">Enter</button>
+        </div>
+
+        <div id="sec6">6</div>
+
+    </div>
+
+
+    <script src="script.js" defer></script>
+ 
+  
+</body>
+</html>
